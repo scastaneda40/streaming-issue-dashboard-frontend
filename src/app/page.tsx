@@ -1,7 +1,7 @@
 "use client";
 
 import { gql } from "@apollo/client";
-import { useQuery } from "@apollo/client/react/hooks";
+import { useQuery } from "@apollo/client/react";
 import { GET_ISSUES } from "@/graphql/queries";
 import { IssueCard } from "@/components/IssueCard";
 import { IssueFilters } from "@/components/IssueFilters";

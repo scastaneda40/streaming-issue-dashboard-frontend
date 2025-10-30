@@ -12,7 +12,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { useState, ChangeEvent, FormEvent, useEffect } from "react";
-import { useMutation } from "@apollo/client/react/hooks";
+import { useMutation } from "@apollo/client/react";
 import { CREATE_ISSUE, UPDATE_ISSUE } from "@/graphql/mutations";
 import { GET_ISSUES } from "@/graphql/queries";
 import { useRouter } from "next/navigation";

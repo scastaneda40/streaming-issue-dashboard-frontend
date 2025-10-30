@@ -1,6 +1,6 @@
 "use client";
 
-import { useQuery, useMutation } from "@apollo/client/react/hooks";
+import { useQuery, useMutation } from "@apollo/client/react";
 import { GET_ISSUE_BY_ID, GET_ISSUES } from "@/graphql/queries";
 import { UPDATE_ISSUE, ADD_COMMENT, DELETE_ISSUE } from "@/graphql/mutations";
 import {

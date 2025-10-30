@@ -30,6 +30,7 @@ This application leverages a modern and powerful technology stack to deliver a h
 - **Styling:** Tailwind CSS (for utility-first CSS styling)
 - **Data Fetching:** Apollo Client (for managing GraphQL data and state)
 - **Routing:** Next.js App Router
+- **Code Splitting:** React.lazy and Suspense (for dynamic imports and loading states)
 
 ### Backend
 
@@ -211,6 +212,10 @@ streaming-issue-dashboard/
 ├── tailwind.config.ts
 └── tsconfig.json
 ```
+
+## Additional Notes
+
+- This project incorporates `React.lazy` and `Suspense` for code splitting, dynamically loading components like `IssueForm` to improve initial page load performance.
 
 ## Future Enhancements
 

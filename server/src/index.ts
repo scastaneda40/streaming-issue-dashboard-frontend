@@ -266,7 +266,7 @@ const server = new ApolloServer({
 // Learn more about what `startStandaloneServer` options you can pass:
 // https://www.apollographql.com/docs/apollo-server/api/standalone/setup#startstandaloneserver
 startStandaloneServer(server, {
-  listen: { port: 4000 },
+  listen: { port: Number(process.env.PORT) || 4000 },
 }).then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });

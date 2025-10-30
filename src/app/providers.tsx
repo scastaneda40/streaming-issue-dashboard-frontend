@@ -12,7 +12,9 @@ import React from "react";
 // These are being ignored as they appear to be environment-specific type resolution issues
 // and do not prevent the application from compiling or running correctly in a typical Next.js setup.
 
-const httpLink = new HttpLink({ uri: "http://localhost:4000/" });
+const httpLink = new HttpLink({
+  uri: "https://streaming-issue-dashboard-backend.onrender.com/",
+});
 
 const client = new ApolloClient({
   link: from([httpLink]),

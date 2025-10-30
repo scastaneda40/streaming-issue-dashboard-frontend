@@ -19,7 +19,8 @@ const httpLink = new HttpLink({
 const client = new ApolloClient({
   link: from([httpLink]),
   cache: new InMemoryCache(),
-});
+  connectToDevTools: true, // Enable Apollo Client Devtools in production
+} as any); // Type assertion to bypass TypeScript error
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
